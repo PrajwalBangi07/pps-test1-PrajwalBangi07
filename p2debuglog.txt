@@ -1,13 +1,4 @@
- gcc -g p2original.c
- ./ a.out
-bash: ./: Is a directory
- ./a.out
-enter the value of a
-12
-enter the value of b
-13
-the sum of a and b is 25 
- gdb a.out
+ gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -24,28 +15,21 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...done.
 (gdb) b main
-Breakpoint 1 at 0x772: file p2original.c, line 2.
+Breakpoint 1 at 0x7c5: file p2original.c, line 22.
 (gdb) r
 Starting program: /home/runner/pps-test1-PrajwalBangi07-60/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p2original.c:2
-warning: Source file is more recent than executable.
-2   int main(){
+Breakpoint 1, main () at p2original.c:22
+22    a=input();
 (gdb) n
-4     printf("enter the value of a\n");
+enter a non
+23    b=input();
 (gdb) n
-enter the value of a
-5     scanf("%d",&a);
+24    c=add(a,b);
 (gdb) n
-n
-7     printf("enter the value of b\n");
+25    output(a,b,c);
 (gdb) n
-enter the value of b
-8     scanf("%d",&b);
+26    return 0;
 (gdb) n
-10    printf("the sum of a and b is %d", a+b);
-(gdb) n
-11    return 0;
-(gdb) n
-12  }(gdb) 
+27  }(gdb) n
