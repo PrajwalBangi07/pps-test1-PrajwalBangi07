@@ -12,4 +12,12 @@ int main()
   {
     printf("B is grater\n");
   }
+  int main()
+  {
+    int a,b,c;
+    a=input();
+    b=input();
+    c=input();
+  }
+  return 0;
 }
