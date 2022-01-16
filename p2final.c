@@ -1,6 +1,6 @@
 #include<stdio.h>
 int input()
-{
+{ 
   int i;
   printf("enter a no");
   scanf("%d",&i);
@@ -15,7 +15,7 @@ int add (int a,int b)
 void output(int a,int b,int c)
 {
   printf("%d+%d=%d",a,b,c);
-}
+} 
 int main()
 {
   int a,b,c;
