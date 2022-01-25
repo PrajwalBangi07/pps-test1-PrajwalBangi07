@@ -1,4 +1,13 @@
- gdb a.out
+gcc -g p4final.c
+ ./a.out
+Enter a number: 
+55
+Enter a number:  
+69
+Enter a number:
+86
+c is greater 
+ gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -15,32 +24,23 @@ For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...done.
 (gdb) b main
-Breakpoint 1 at 0x8e4: file p4original.c, line 45.
+Breakpoint 1 at 0x86e: file p4final.c, line 56.
 (gdb) r
-Starting program: /home/runner/pps-test1-PrajwalBangi07-66/a.out 
+Starting program: /home/runner/pps-test1-PrajwalBangi07-65/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p4original.c:45
-45      a=input();
+Breakpoint 1, main () at p4final.c:56
+56    a=input();
 (gdb) n
-Enter a number  n
-46      b=input();
+Enter a number:n
+57    b=input();
 (gdb) n
-47      c=input();
+58    c=input();
 (gdb) n
-48      cmp(a, b, c);
+59    result=cmp(a,b,c);
 (gdb) n
-49      return 0;
+60    output(result);
 (gdb) n
-50    }
+61    return 0;
 (gdb) n
-__libc_start_main (main=0x559b4ac008dc <main>, argc=1, 
-    argv=0x7ffd8b6b1db8, init=<optimized out>, fini=<optimized out>, 
-    rtld_fini=<optimized out>, stack_end=0x7ffd8b6b1da8)
-    at ../csu/libc-start.c:344
-344 ../csu/libc-start.c: No such file or directory.
-(gdb) n
-Enter a number  Enter a number  All numbers are equal[Inferior 1 (process 345) exited normally]
-(gdb) n
-The program is not being run.
-(gdb) n
+62  }(gdb) 
